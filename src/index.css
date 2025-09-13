@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    font-family: Pretendard;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff2')
+      format('woff2');
+    font-size: 1rem;
+    font-display: block;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+  }
+}
