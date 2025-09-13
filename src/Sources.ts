@@ -20,7 +20,7 @@ export const SOURCES: Source[] = [
         text: Q1Source,
       },
       {
-        name: '@/components/Snake.ts',
+        name: '@/answers/Snake.ts',
         text: SnakeSource,
       },
       {

@@ -1,5 +1,8 @@
 import { cn } from '@/utils';
 import { Highlight, themes } from 'prism-react-renderer';
+import Button from './Button';
+
+const GITHUB_BASE = 'https://github.com/Maetel/vueron-test/tree/main/src';
 
 export interface SourceViewerProps {
   name: string;
@@ -10,7 +13,18 @@ export default function SourceViewer(props: SourceViewerProps) {
 
   return (
     <article>
-      <h3>{name}</h3>
+      <div className="flex items-center mb-0.5">
+        <h3>{name}</h3>
+        <Button
+          className="ml-3"
+          onClick={() => {
+            window.open(`${GITHUB_BASE}/${name.replace('@/', '')}`, '_blank');
+          }}
+        >
+          소스열기
+        </Button>
+      </div>
+
       <Highlight
         theme={themes.vsDark}
         code={source}
