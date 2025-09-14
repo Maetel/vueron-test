@@ -9,8 +9,8 @@
 
   > 기본 개발포트 : 5173  
   > bun i && bun run dev
-  - URL query를 붙여야 메인 컴포넌트가 렌더됩니다.
-  - https://localhost:5173/?pass=황원준
+  - **배포 환경에서는 URL query를 붙여야 메인 컴포넌트가 렌더됩니다.**
+    - ex) 로컬 vite 빌드 후 https://localhost:4173/?pass=황원준
 
 - 기타 참고사항
   - 필수문항 1개와 선택문항 4개에 대한 해답이 포함되어 있습니다. (1, 2, 3, 4, 6번)

@@ -11,7 +11,9 @@ export default function App() {
 
   const curTab = TABS[tab];
 
+  // 개발환경이거나 배포환경에서 '?pass=황원준'의 쿼리가 있을 때만 노출
   const show =
+    import.meta.env.DEV ||
     new URLSearchParams(window.location.search).get('pass') === '황원준';
   if (!show) {
     return null;
