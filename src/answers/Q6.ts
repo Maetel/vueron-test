@@ -21,8 +21,8 @@ function cross(p1: Coord, p2: Coord, p3: Coord): number {
 // p1-p2를 잇는 직선이 있을 때 p3가 중심에서 멀어지는 방향에 있는지
 // top-left 기준으로 p3는 p1-p2의 왼쪽에 위치와 동일한 의미
 function isOutside(p1: Coord, p2: Coord, p3: Coord): boolean {
-  // 외적으로 판단, 직선 상의 점도 포함
-  return cross(p1, p2, p3) >= 0;
+  // 외적으로 판단, 직선 상의 점 제외
+  return cross(p1, p2, p3) > 0;
 }
 
 // p1-p2 직선에 대한 p3의 거리의 제곱, 최대거리만 찾을것이므로 최적화를 위해 sqrt 사용 X

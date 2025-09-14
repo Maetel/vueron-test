@@ -61,7 +61,6 @@ function Q4({
     const camera = new THREE.PerspectiveCamera(75, canvasRatio, 0.1, 100);
 
     camera.position.set(0, 1, 3);
-    // camera.position.set(0, 0.5, 3);
 
     const controls = enableOrbitControls
       ? new OrbitControls(camera, renderer.domElement)
@@ -134,6 +133,7 @@ function Q4({
         return;
       }
 
+      // 큐브를 찾았으면 색을 바꿔주고 화면 렌더
       colorIndexRef.current = (colorIndexRef.current + 1) % colorPreset.length;
       (cube.material as THREE.MeshStandardMaterial).color.setHex(
         colorPreset[colorIndexRef.current],
@@ -158,6 +158,7 @@ function Q4({
     // 렌더 시작
     anim = requestAnimationFrame(animate);
 
+    // cleanup
     return () => {
       cancelAnimationFrame(anim);
 

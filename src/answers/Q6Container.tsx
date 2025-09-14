@@ -82,7 +82,7 @@ function Q6() {
         </svg>
         <div className="absolute right-0 top-0 flex gap-2">
           <div className="bg-white p-1 rounded-md border border-gray-300">
-            외곽{' '}
+            외곽
             <input
               type="checkbox"
               checked={showOutline}
@@ -118,7 +118,7 @@ function Q6() {
           </Button>
         </div>
         <div className="absolute left-0 top-0 bg-white p-1 rounded-md border border-gray-300">
-          좌표 : ({formatDecimal(hoveredCoord?.x ?? '-', 4)},{' '}
+          좌표 : ({formatDecimal(hoveredCoord?.x ?? '-', 4)},
           {formatDecimal(hoveredCoord?.y ?? '-', 4)})
         </div>
       </section>

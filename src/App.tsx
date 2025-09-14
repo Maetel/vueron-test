@@ -69,7 +69,7 @@ function SourceViewPanel({ tab }: { tab: Tab }) {
   return (
     <div
       className={cn(
-        'fixed max-h-[90%] max-w-[min(1024px,95%)] right-6 bottom-3 rounded-md bg-blue-100 shadow-2xl overflow-y-scroll',
+        'fixed max-h-[90%] max-w-[min(1024px,95%)] right-3 bottom-3 rounded-md bg-blue-100 shadow-2xl overflow-y-scroll',
       )}
     >
       {sourceOpen ? (

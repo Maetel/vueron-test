@@ -3,6 +3,7 @@ import Q2 from '@/answers/Q2';
 import Q4Container from '@/answers/Q4Container';
 import Q6Container from '@/answers/Q6Container';
 import { Source, SOURCES } from '@/Sources';
+import Q3Container from './answers/Q3Container';
 
 export interface Tab {
   name: string;
@@ -21,7 +22,8 @@ export const TABS: Tab[] = [
     source: SOURCES.find(s => s.name === 'Q2'),
   },
   {
-    name: '3. Dashboard',
+    name: '3. Architecture',
+    component: <Q3Container></Q3Container>,
   },
   {
     name: '4. Three.js',
@@ -29,14 +31,8 @@ export const TABS: Tab[] = [
     source: SOURCES.find(s => s.name === 'Q4'),
   },
   {
-    name: '5. Clustering',
-  },
-  {
     name: '6. Convex Hull',
     component: <Q6Container></Q6Container>,
     source: SOURCES.find(s => s.name === 'Q6'),
-  },
-  {
-    name: '7. HTML Optimization',
   },
 ];

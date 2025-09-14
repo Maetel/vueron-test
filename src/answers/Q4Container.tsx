@@ -13,7 +13,7 @@ export default function Q4Container() {
     <section className="w-full h-full">
       <div className="absolute right-1 top-1 flex flex-col gap-2">
         <div className="flex items-center">
-          분당 회전 수 :{' '}
+          분당 회전 수 :
           <input
             className="border border-gray-300 rounded-md px-1 w-16"
             type="number"
