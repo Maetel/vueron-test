@@ -53,12 +53,12 @@ export function calcConvexHull(inputPoints: Coord[]): {
 
   const start = performance.now();
 
-  const createCopyWithIndex = () => {
+  const createCopy = () => {
     // const copiedPoints = structuredClone(points); // deep copy
     const retval: Coord[] = inputPoints.map((p, i) => ({ ...p, i })); // shallow
     return retval;
   };
-  const xSorted = createCopyWithIndex().sort((l, r) => l.x - r.x);
+  const xSorted = createCopy().sort((l, r) => l.x - r.x);
 
   // 시작 포인트
   const minXPoint = xSorted[0];

@@ -18,10 +18,10 @@ export default function SnakeViewer({
       <ul
         className={cn(
           'inline-grid list-none px-5',
-          'grid-cols-[repeat(var(--n),minmax(0,1fr))]',
-          'grid-rows-[repeat(var(--n),minmax(0,1fr))]',
+          'grid-cols-[repeat(var(--snake-n),minmax(0,1fr))]',
+          'grid-rows-[repeat(var(--snake-n),minmax(0,1fr))]',
         )}
-        style={{ ['--n' as any]: N }}
+        style={{ ['--snake-n' as any]: N }}
       >
         {array.map((value: number, index: number) => {
           const i = Math.floor(index / N);
